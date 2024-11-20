@@ -1,0 +1,25 @@
+.movieCard{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: white;
+    transition: transform 0.2s ease-in-out;
+}
+.movieCard:hover {
+    transform: translateY(-5px);
+}
+.underImageContainer{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.title{
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}

@@ -1,11 +1,11 @@
 import React from 'react';
 
-const PostsPage = () => {
+const MovieInfo = () => {
     return (
         <div>
-            PostsPage
+
         </div>
     );
 };
 
-export default PostsPage;
+export default MovieInfo;

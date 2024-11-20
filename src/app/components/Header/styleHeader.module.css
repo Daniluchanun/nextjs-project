@@ -1,0 +1,10 @@
+.listMenu {
+    list-style: none;
+    color: black;
+    display: flex;
+    justify-content: space-evenly;
+}
+.listMenu li a {
+    text-decoration: none;
+    color: black;
+}
