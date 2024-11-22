@@ -1,0 +1,23 @@
+.container {
+    padding: 20px;
+}
+
+.genreList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.genreBadge {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.genreBadge:hover {
+    background-color: #555;
+}

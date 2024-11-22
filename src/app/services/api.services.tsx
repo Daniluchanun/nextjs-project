@@ -22,7 +22,8 @@ export const getMovies = async (page: number): Promise<IResponse> => {
     const data = await response.json();
     return data;
 };
-export const getMovieFromId = async (id: string | string[]): Promise<IResult> => {
+
+export const getMovieById = async (id: string | string[]): Promise<IResult> => {
     const response = await fetch(`https://api.themoviedb.org/3/movie/${id}`, options);
     if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
@@ -30,11 +31,20 @@ export const getMovieFromId = async (id: string | string[]): Promise<IResult> =>
     return await response.json();
 };
 
-export const getGenres = async ():Promise<IGenres[]> => {
-    const response = await fetch(`https://api.themoviedb.org/3/genre/movie/list?language=en`, options);
+export const getGenres = async (): Promise<IGenres[]> => {
+    const response = await fetch(`https://api.themoviedb.org/3/genre/movie/list?language=en-US`, options);
     if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
     }
     const data = await response.json();
     return data.genres;
+};
+
+export const getMoviesByGenre = async (genreId: string | string [], page: number): Promise<IResponse> => {
+    const response = await fetch(`https://api.themoviedb.org/3/discover/movie?with_genres=${genreId}&page=${page}`, options);
+    if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    const data:IResponse = await response.json();
+    return data;
 };

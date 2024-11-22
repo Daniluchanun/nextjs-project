@@ -1,0 +1,59 @@
+.mainContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    width: 100vw;
+}
+.helpContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.imageProps {
+    height: 85vh;
+    border-radius: 20px;
+}
+
+.descriptionContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 85vh;
+    gap: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 0 20px;
+}
+
+.descriptionText {
+    width: 450px;
+}
+
+.buttonContainer {
+    display: flex;
+    gap: 10px;
+}
+
+.button {
+    width: 160px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 6px;
+    transition: 300ms;
+}
+
+.watchButton {
+    background: black;
+    color: white;
+}
+
+.trailerButton {
+    background: none;
+}
+
+.button:hover {
+    scale: 1.05;
+}

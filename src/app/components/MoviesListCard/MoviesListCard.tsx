@@ -14,7 +14,7 @@ export const MoviesListCard: FC<IProps> = ({movie}) => {
 
     return (
         <div key={movie.id} className={styles.movieCard}>
-            <Link href={`/movies/${movie.id}`}>
+            <Link href={`/movies/${movie.id}`} className={styles.classForLinkTag}>
                 <PosterPreview image={movie.backdrop_path} description={movie.title}/>
                 <div className={styles.underImageContainer}>
                     <h3 className={styles.title}>{movie.title}</h3>

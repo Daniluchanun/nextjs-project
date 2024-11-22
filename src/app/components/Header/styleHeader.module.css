@@ -3,6 +3,9 @@
     color: black;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
+    height: 10vh;
+    border-bottom: #1a1a1a solid 1px;
 }
 .listMenu li a {
     text-decoration: none;

@@ -1,0 +1,13 @@
+.genreBadge {
+    padding: 8px 16px;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin: 5px;
+    font-size: 14px;
+}
+
+.genreBadge:hover {
+    background-color: #ddd;
+}

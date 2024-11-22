@@ -8,9 +8,8 @@ const Header = () => {
             <ul className={styles.listMenu}>
                 <li><Link href={'/'}>Main</Link></li>
                 <li><Link href={'/movies'}>Movies</Link></li>
-                <li><Link href={'/'}>Genres</Link></li>
+                <li><Link href={'/genres'}>Genres</Link></li>
             </ul>
-            <hr/>
         </div>
     );
 };
