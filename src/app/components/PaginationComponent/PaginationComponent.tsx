@@ -1,5 +1,6 @@
 'use client'
 import React, {FC} from 'react';
+import styles from './pagination.module.css'
 
 type IProps = {
     currentPage: number;
@@ -19,12 +20,12 @@ const PaginationComponent: FC<IProps> = ({currentPage, totalPages, onPageChange}
         }
     };
     return (
-        <div>
-            <button onClick={handlePrevPage} disabled={currentPage === 1}>prev</button>
-            <span>
-                Page {currentPage} of {totalPages}
+        <div className={styles.mainContainer}>
+            <button className={styles.btn} onClick={handlePrevPage} disabled={currentPage === 1}>Prev</button>
+            <span className={styles.mainSpan}>
+                Page <span className={styles.spanText}>{currentPage}</span> of <span className={styles.spanText}>{totalPages}</span>
             </span>
-            <button onClick={handleNextPage} disabled={currentPage === totalPages}>next</button>
+            <button className={styles.btn} onClick={handleNextPage} disabled={currentPage === totalPages}>Next</button>
         </div>
     );
 };

@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&display=swap');
+
+.flexContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainTitle {
+    margin-top: 20px;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.spanText {
+    font-family: "Edu AU VIC WA NT Pre", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #ec3434;
+    font-size: 70px;
+    text-transform: none;
+}
+
+.mainContainer {
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+    text-align: left;
+}
+
+.descriptionContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+
+.descriptionText {
+    width: 500px;
+}
+
+.watchButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 40px;
+    border: 1px solid #121212;
+    border-radius: 6px;
+    background: none;
+    color: #121212;
+    transition: 300ms;
+    text-decoration: none;
+}
+.watchButton:hover {
+    color: white;
+    border: none;
+    background-color: #ec3434;
+    scale: 1.03;
+}
+
+.poster {
+    height: 600px;
+    border-radius: 10px;
+    width: auto;
+}

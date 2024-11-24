@@ -1,0 +1,43 @@
+.mainContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.userLogo {
+    height: 50px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 5px;
+    height: 32px;
+    width: 90px;
+    transition: 300ms;
+    font-size: 14px;
+}
+
+.signBtn {
+    background-color: #121212;
+    color: white;
+    margin-right: 10px;
+}
+.signBtn:hover {
+    background-color: #ec3434;
+    scale: 1.03;
+}
+
+.loginBtn {
+    border: 1px solid #ec3434;
+    color: #ec3434;
+}
+
+.loginBtn:hover {
+    color: white;
+    background-color: #ec3434;
+    border: none;
+    scale: 1.03;
+}

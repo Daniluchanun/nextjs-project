@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&display=swap');
 
+.mainContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .container {
     padding: 20px;
     display: flex;
@@ -9,12 +16,20 @@
     min-height: 100vh;
 }
 
-.mainTitle {
+.mainText {
     font-size: 50px;
     font-weight: bold;
     margin-bottom: 20px;
     text-align: center;
     text-transform: uppercase;
+}
+
+.secondText {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 20px;
+    color: #cccccc;
+    text-align: center;
 }
 
 .spanText {
@@ -29,8 +44,18 @@
 
 .moviesList {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 стовпчики однакової ширини */
-    gap: 20px; /* Відступи між картками */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
     width: 100%;
-    margin-bottom: 20px;
 }
+
+.moviesList > div {
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 300ms;
+}
+
+.moviesList > div:hover {
+    transform: translateY(-5px);
+}
+

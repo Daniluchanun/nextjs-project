@@ -48,3 +48,22 @@ export const getMoviesByGenre = async (genreId: string | string [], page: number
     const data:IResponse = await response.json();
     return data;
 };
+
+export const getMoviesByQuery = async (query: string): Promise<IResult[]> => {
+    const response = await fetch(`https://api.themoviedb.org/3/search/movie?query=${query}&language=en-US&page=1&include_adult=false`, options);
+    if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    const data = await response.json();
+    return data.results;
+};
+
+export const getMoviesBySearch = async (query: string, page: number): Promise<IResponse> => {
+    const response = await fetch(`https://api.themoviedb.org/3/search/movie?query=${query}&page=${page}`, options);
+    if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    const data: IResponse = await response.json();
+    return data;
+};
+

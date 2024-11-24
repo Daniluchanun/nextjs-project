@@ -1,13 +1,15 @@
-.containerForRatingLine {
-    display: flex;
-    align-items: center;
-    gap: 8px;
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&display=swap');
+
+.ratingText {
+    font-size: 14px;
+    color: #aeaeae;
 }
 
-.ratingLine {
-    width: 100px;
-    height: 10px;
-    background-color: lightgray;
-    border-radius: 5px;
-    overflow: hidden;
+.ratingRed {
+    font-family: "Edu AU VIC WA NT Pre", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22px;
+    color: #ec3434;
 }

@@ -1,4 +1,3 @@
-
 import React, {useEffect, useState} from 'react';
 import MoviesListCard from "@/app/components/MoviesListCard/MoviesListCard";
 import {IResult} from "@/app/models/IResult";
@@ -9,7 +8,6 @@ import PaginationComponent from "@/app/components/PaginationComponent/Pagination
 const MoviesList = () => {
     const [movies, setMovies] = useState<IResult[]>([])
     const [currentPage, setCurrentPage] = useState(1);
-    // const totalPages = 500;
     const [totalPages, setTotalPages] = useState(1)
 
     useEffect(() => {
@@ -26,8 +24,10 @@ const MoviesList = () => {
     }, [currentPage]);
 
     return (
-        <div className={styles.mainContainer}>
-            {movies.map(movie => (<MoviesListCard movie={movie} key={movie.id}/>))}
+        <div className={styles.flexContainer}>
+            <div className={styles.mainContainer}>
+                {movies.map(movie => (<MoviesListCard movie={movie} key={movie.id}/>))}
+            </div>
             <PaginationComponent currentPage={currentPage} totalPages={totalPages} onPageChange={setCurrentPage}/>
         </div>
     );

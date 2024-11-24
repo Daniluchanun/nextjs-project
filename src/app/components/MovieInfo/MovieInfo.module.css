@@ -5,11 +5,12 @@
     height: 90vh;
     width: 100vw;
 }
+
 .helpContainer {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 40px;
 }
 
 .imageProps {
@@ -23,9 +24,11 @@
     flex-direction: column;
     height: 85vh;
     gap: 20px;
-    border: 1px solid black;
-    border-radius: 20px;
     padding: 0 20px;
+}
+
+.descriptionContainer h2 {
+    width: 450px;
 }
 
 .descriptionText {
@@ -40,20 +43,31 @@
 .button {
     width: 160px;
     height: 40px;
-    border: 1px solid black;
+    border: 1px solid #121212;
     border-radius: 6px;
     transition: 300ms;
 }
 
 .watchButton {
-    background: black;
+    background: #121212;
     color: white;
+}
+
+.watchButton:hover {
+    background-color: #ec3434;
+    border: none;
+    scale: 1.04;
 }
 
 .trailerButton {
     background: none;
+    border: 1px solid #ec3434;
+    color: #ec3434;
 }
 
-.button:hover {
-    scale: 1.05;
+.trailerButton:hover {
+    background-color: #ec3434;
+    color: white;
+    scale: 1.04;
 }
+

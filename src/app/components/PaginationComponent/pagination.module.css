@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&display=swap');
+.mainContainer {
+    display: flex;
+    gap: 20px;
+}
+.mainSpan{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.spanText{
+    font-family: "Edu AU VIC WA NT Pre", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: #ec3434;
+}
+
+.btn{
+    width: 80px;
+    height: 35px;
+    background: none;
+    border: 1px solid #121212;
+    border-radius: 6px;
+    transition: 300ms;
+}
+
+.btn:hover {
+    scale: 1.05;
+    color: white;
+    background-color: #ec3434;
+    border: none;
+}
