@@ -24,9 +24,9 @@ const Footer = () => {
                 <div className={styles.social}>
                     <h3>Our social</h3>
                     <div className={styles.icons}>
-                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
-                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
-                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
+                        <a href="https://facebook.com">Facebook</a>
+                        <a href="https://instagram.com">Instagram</a>
+                        <a href="https://twitter.com">Twitter</a>
                     </div>
                 </div>
             </div>

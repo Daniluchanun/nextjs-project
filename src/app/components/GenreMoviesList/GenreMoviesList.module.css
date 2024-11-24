@@ -29,8 +29,8 @@
 
 .moviesList {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 стовпчики однакової ширини */
-    gap: 20px; /* Відступи між картками */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
     width: 100%;
     margin-bottom: 20px;
 }

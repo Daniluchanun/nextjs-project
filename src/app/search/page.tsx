@@ -1,16 +1,16 @@
 'use client';
 
 import React, {useEffect, useState} from 'react';
-import {useSearchParams} from 'next/navigation'; // Хук Next.js для роботи з параметрами пошуку
-import {getMoviesBySearch} from '@/app/services/api.services'; // Функція для отримання фільмів
+import {useSearchParams} from 'next/navigation';
+import {getMoviesBySearch} from '@/app/services/api.services';
 import MoviesListCard from '@/app/components/MoviesListCard/MoviesListCard';
 import styles from './SearchPage.module.css';
 import {IResult} from "@/app/models/IResult";
-import PaginationComponent from "@/app/components/PaginationComponent/PaginationComponent"; // Файл стилів
+import PaginationComponent from "@/app/components/PaginationComponent/PaginationComponent";
 
 const SearchPage = () => {
     const searchParams = useSearchParams();
-    const query = searchParams.get('query'); // Отримуємо параметр 'query' з URL
+    const query = searchParams.get('query');
     const [movies, setMovies] = useState<IResult[]>([]);
     const [loading, setLoading] = useState<boolean>(true);
     const [totalPages, setTotalPages] = useState(1)

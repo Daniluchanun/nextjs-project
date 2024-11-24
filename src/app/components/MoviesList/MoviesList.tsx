@@ -25,6 +25,8 @@ const MoviesList = () => {
 
     return (
         <div className={styles.flexContainer}>
+            <h1 className={styles.title}>Explore Our Top <span className={styles.titleSpecialText}>movies</span>
+            </h1>
             <div className={styles.mainContainer}>
                 {movies.map(movie => (<MoviesListCard movie={movie} key={movie.id}/>))}
             </div>

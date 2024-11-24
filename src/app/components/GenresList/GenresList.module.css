@@ -21,8 +21,9 @@
     font-weight: 400;
     font-style: normal;
     color: #ec3434;
-    font-size: 70px;
+    font-size: 90px;
     text-transform: none;
+    margin-left: 10px;
 }
 
 .genreList {

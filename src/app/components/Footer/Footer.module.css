@@ -3,7 +3,7 @@
     color: #ffffff;
     padding: 30px 0;
     margin-top: 50px;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px 10px 0 0;
 }
 
 .container {
@@ -31,7 +31,7 @@
 .description {
     font-size: 14px;
     width: 300px;
-    color: rgba(255, 255, 255, 0.8);
+    color: #e6e6e6;
 }
 
 .links {
@@ -40,12 +40,11 @@
 
 .links h3 {
     font-size: 18px;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
 .links ul {
     list-style: none;
-    padding: 0;
 }
 
 .links ul li {
@@ -53,7 +52,7 @@
 }
 
 .links ul li a {
-    color: rgba(255, 255, 255, 0.8);
+    color: #e6e6e6;
     text-decoration: none;
     transition: color 0.3s;
 }
@@ -68,12 +67,12 @@
 
 .social h3 {
     font-size: 18px;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
 .social .icons a {
     display: block;
-    color: rgba(255, 255, 255, 0.8);
+    color: #e6e6e6;
     text-decoration: none;
     margin-bottom: 8px;
     transition: color 0.3s;
@@ -87,5 +86,5 @@
     text-align: center;
     margin-top: 30px;
     font-size: 14px;
-    color: rgba(255, 255, 255, 0.6);
+    color: #a5a5a5;
 }

@@ -2,7 +2,8 @@ import React from 'react';
 import {Metadata} from 'next';
 
 export const metadata: Metadata = {
-    title: 'MoviesLayout',
+    title: 'All Movies',
+    description: 'Browse all movies available on our platform',
 };
 
 type Props = { children: React.ReactNode };

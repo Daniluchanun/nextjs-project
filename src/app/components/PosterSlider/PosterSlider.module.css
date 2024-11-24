@@ -10,23 +10,20 @@
     border-radius: 10px;
 }
 
-
 .sliderWrapper {
     display: flex;
 }
 
-
 .slide {
-    flex: 0 0 100%; /* Кожен слайд займає всю ширину */
+    flex: 0 0 100%;
     margin-right: 5px;
 }
-
 
 .slide img {
     width: 100%;
     height: 90vh;
-    object-fit: cover; /* Зберігає пропорції */
-    border-radius: 10px; /* Закруглення кутів */
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 .overlay {
@@ -34,23 +31,22 @@
     top: 7vh;
     left: 0;
     width: 40%;
-    height: 90vh; /* Висота на весь слайдер */
-    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 57%, rgba(2, 0, 36, 0) 100%); /* Чорний із прозорістю */
+    height: 90vh;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 57%, rgba(2, 0, 36, 0) 100%);
     border-radius: 10px;
     display: flex;
-    align-items: center; /* Вирівнювання тексту по вертикалі */
-    justify-content: center; /* Вирівнювання тексту по горизонталі */
-    z-index: 2; /* Щоб бути поверх зображення */
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
 }
 
-/* Текст у overlay */
 .overlayText {
     width: 800px;
     position: absolute;
     z-index: 3;
-    left: 70px;
+    left: 7vh;
     top: 16vh;
-    color: white; /* Білий текст */
+    color: white;
     font-size: 120px;
     font-family: "Staatliches", sans-serif;
     font-weight: 400;
@@ -61,9 +57,9 @@
     width: 800px;
     position: absolute;
     z-index: 3;
-    left: 120px;
+    left: 12vh;
     top: 26vh;
-    color: white; /* Білий текст */
+    color: white;
     font-size: 120px;
     font-family: "Staatliches", sans-serif;
     font-weight: 400;
@@ -74,7 +70,7 @@
     width: 500px;
     position: absolute;
     z-index: 2;
-    left: 70px;
+    left: 7vh;
     top: 56vh;
     color: #d5d5d5;
     font-size: 16px;
@@ -84,12 +80,12 @@
     position: absolute;
     display: flex;
     top: 76vh;
-    left: 70px;
+    left: 7vh;
     z-index: 2;
     gap: 15px;
 }
 
-.btn{
+.btn {
     width: 150px;
     height: 40px;
     border: 1px solid #ec3434;

@@ -18,7 +18,7 @@ const GenresList = () => {
     }, []);
     return (
         <div className={styles.container}>
-            <h2 className={styles.title}>Explore Movie <span className={styles.titleSpecialText}>Genres</span></h2>
+            <h1 className={styles.title}>Explore Movie <span className={styles.titleSpecialText}>genres</span></h1>
             <div className={styles.genreList}>
                 {genres.map((genre) => (
                     <Link key={genre.id} href={`/genres/${genre.id}`} className={styles.link}>

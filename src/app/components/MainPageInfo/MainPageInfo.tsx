@@ -2,6 +2,7 @@
 import React from 'react';
 import Link from "next/link";
 import styles from './MainPageInfo.module.css'
+import SubscribeForm from "@/app/components/SubscribeForm/SubscribeForm";
 
 const MainPageInfo = () => {
     return (
@@ -20,6 +21,7 @@ const MainPageInfo = () => {
                 </div>
                 <img className={styles.poster} src="/posters/dunePoster.jpg" alt="Dune Poster"/>
             </div>
+            <SubscribeForm/>
         </div>
     );
 };

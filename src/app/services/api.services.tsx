@@ -2,9 +2,7 @@ import {IResponse} from "@/app/models/IResponse";
 import {IGenres} from "@/app/models/IGenres";
 import {IResult} from "@/app/models/IResult";
 
-// const API_KEY = 'f17b6eb55c0155c2b0d4cbd272180706';
-const ACCESS_TOKEN = 'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJmMTdiNmViNTVjMDE1NWMyYjBkNGNiZDI3MjE4MDcwNiIsIm5iZiI6MTczMTg1MjM1OS41ODYyNjcsInN1YiI6IjY3MzhhN2NlNmEwMmEyNGQ3YjIxNTY4ZiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.qGlrGMeM03kTO-_mbTr1rze2M9Pd9cEPpQscK-A9s7U'; // Замініть на свій токен
-
+const ACCESS_TOKEN = 'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJmMTdiNmViNTVjMDE1NWMyYjBkNGNiZDI3MjE4MDcwNiIsIm5iZiI6MTczMTg1MjM1OS41ODYyNjcsInN1YiI6IjY3MzhhN2NlNmEwMmEyNGQ3YjIxNTY4ZiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.qGlrGMeM03kTO-_mbTr1rze2M9Pd9cEPpQscK-A9s7U';
 const options = {
     method: 'GET',
     headers: {
@@ -45,7 +43,7 @@ export const getMoviesByGenre = async (genreId: string | string [], page: number
     if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
     }
-    const data:IResponse = await response.json();
+    const data: IResponse = await response.json();
     return data;
 };
 
